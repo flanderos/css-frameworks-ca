@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"We will learn more about testing in the Workflow course\" && exit 1",
     "build": "sass src/scss/main.scss:public/css/main.css --style compressed --watch"
+
   },
   "repository": {
     "type": "git",
