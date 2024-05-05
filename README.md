@@ -1,6 +1,6 @@
 # css-frameworks-ca
 
-### This is a simple 3 page social media site built with html and bootstrap. No functionality. 
+##### This is a simple 3 page social media site built with html and bootstrap. No functionality. 
 
 ## Installation
 
