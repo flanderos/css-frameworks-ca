@@ -1,2 +1,4 @@
 # css-frameworks-ca
-Replace this text with a description of your social media project.
+## git clone
+## git npm install
+## npm start
