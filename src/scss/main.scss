@@ -1,3 +1,52 @@
+$primary-h1-colour: #6d1710;
+$primary-btn-colour: black;
+$profile-card-margin: 5px;
+
+h1 {
+  color: $primary-h1-colour;
+}
+
 body {
+  font-family: 'Roboto', sans-serif; // Using Google font Roboto
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid #343a40;
+
+  &-header {
     background-color: #fff;
+    border-bottom: 2px solid #343a40;
+  }
+
+  &-body {
+    background-color: #f8f9fa;
+  }
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #010102;
+  border-color: #010203;
+
+  &:hover {
+    background-color: #6d1710;
+    border-color: #6d1710;
+  }
+}
+
+.profile-card {
+  max-width: 90%;
+  margin: 5px auto;
 }
