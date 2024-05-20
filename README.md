@@ -7,5 +7,5 @@
 #### git clone https://github.com/flanderos/css-frameworks-ca
 #### npm install
 #### npm run build
-#### npm start to start live server
+#### npm start 
 
