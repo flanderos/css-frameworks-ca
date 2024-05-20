@@ -19,7 +19,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
@@ -63,6 +63,18 @@ form {
   margin: 5px auto;
 }
 
+header {
+  width: 100%;
+}
+
 nav {
   width: 100%;
+}
+
+#loginform {
+  max-width: 500px;
+}
+
+article {
+  margin: 5px auto;
 }
