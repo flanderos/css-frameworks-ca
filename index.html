@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="..\public\css\main.css">
+    <link rel="stylesheet" href="/dist/css/main.css">
     <title>CSS Course Assignment</title>
 </head>
 <body>
-    <div class="container">
+    <header class="container">
         <h1 class="display-4 text-center mt-4">CSS framework CA, Social Media Page</h1>
-    </div>
-    <div class="container mt-5">
-        <div class="row justify-content-center>
-            <div class="col-md-6">
+    </header>
+    <main class="mt-5">
+        <section class="row justify-content-center">
+            <article id="loginform">
                 <div class="card border-dark profile-card">
-                    <div class="card-header bg-white">
+                    <header class="card-header bg-white">
                         <h2 class="text-center display-5">Enter site</h2>
-                    </div>
+                    </header>
                     <div class="card-body">
                         <form id="login-form" action="profile.html">
                             <div class="form-group">
@@ -31,12 +30,12 @@
                             </div>
                             <a href="feed.html" class="btn btn-primary btn-block d-none" id="login-link">Log in</a>
                             <a href="profile.html" class="btn btn-primary btn-block d-none" id="register-link">Register</a>
-                            <button type="submit" class="btn btn-block btn-primary">Log in</button>
+                            <button type="submit" class="btn btn-block btn-primary" id="loginform-button">Log in</button>
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

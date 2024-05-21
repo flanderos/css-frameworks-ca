@@ -1,3 +1,5 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 $primary-h1-colour: #6d1710;
 $primary-btn-colour: black;
 $profile-card-margin: 5px;
@@ -19,7 +21,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
@@ -63,6 +65,27 @@ form {
   margin: 5px auto;
 }
 
+header {
+  width: 100%;
+}
+
 nav {
   width: 100%;
+}
+
+#loginform {
+  max-width: 500px;
+
+  &-button {
+    margin-top: 5px;
+  }
+}
+
+article {
+  margin: 5px auto;
+}
+
+#userName {
+  font-size:x-large;
+  font-weight: 800;
 }
