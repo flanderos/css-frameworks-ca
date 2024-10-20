@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/dist/css/main.css">
-  <title>CSS Course Assignment</title>
+  <title>Profile Page</title>
 </head>
 <body>
   <header>
+    <h1 class="display-4 text-center mt-5">CSS Framework CA, Social Media Page</h1>
+</header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">My Profile</a>
@@ -27,77 +29,87 @@
         </div>
       </div>
     </nav>
-  </header>
   <main class="container mt-5 mb-5">
     <section class="row justify-content-center">
       <article class="col-md-8 border border-dark rounded p-4 bg-white shadow-lg profile-card">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <button id="editAvatarButton" class="btn btn-primary mb-4">Edit Profile Picture</button>
-          <input type="text" class="form-control mb-4" id="editAvatarInput" placeholder="Enter URL">
-          <div id="followersFollowing" class="text-center mt-4">
-            <p class="text-lg" id="userName">Username: My username</p>
-            <div class="d-inline-block mr-4">
-              <h5>Followers</h5>
-              <p id="followersCount">99k</p>
-            </div>
-            <div class="d-inline-block">
-              <h5>Following</h5>
-              <p id="followingCount">200</p>
-            </div>
+        <div id="cardHeader">
+        <div id="userName">
+          <p id="userName">Will Smith</p>
+        </div>
+        <div id="followerCount">
+          <h5>Followers</h5>
+          <span id="followerNumber">99k</span>
+        </div>
+      </div>
+        <div>
+          <img src="media/will.jpg" alt="picture of will smith">
+        </div>
+        <div class="text-center">
+          <button id="editAvatarButton" class="btn btn-primary mb-4">Edit Profile Picture <i class="fa-regular fa-pen-to-square"></i></button>
+        </div>
+        <div id="followersFollowing" class="text-center mt-4">
+          <div class="d-inline-block mr-4">
+            <h5>Following</h5>
+            <p id="followersCount">1</p>
           </div>
-          <div id="profile-picture" class="mb-4">
-            <img class="img-fluid rounded-circle border border-dark shadow-lg" src="media/avatar.jpg" alt="User Avatar">
-          </div>
-          <div id="profileInfo" class="text-start">
-            <p class="text-lg" id="realName">Name: My name</p>
-            <p class="text-sm" id="userEmail">Email: myemail@email.com</p>
-            <p class="text-sm" id="userAge">Age: 16</p>
-            <p class="text-sm" id="userGender">Gender: Yes</p>
-            <p class="text-sm" id="userAbout">About: Here is something about me</p>
-          </div>
-          <section class="container mt-4">
-            <div class="row justify-content-center">
-              <article class="col-md-4">
-                <a href="post1.html" class="text-decoration-none">
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <h5 class="card-title">Post Title 1</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis necessitatibus voluptates. Enim, deleniti? Nostrum, sed ipsum rem, accusamus at iste reiciendis eligendi, pariatur quisquam numquam fugiat? Veniam, voluptatem saepe...</p>
-                    </div>
+        </div>
+        <div id="profile-picture" class="mb-4">
+          <img class="img-fluid rounded-circle border border-dark shadow-lg" src="media/avatar.jpg" alt="User Avatar">
+        </div>
+        
+        <div id="profileInfo" class="text-start">
+          <p class="text-lg" id="realName"><span>Name:</span> Will Smith</p>
+          <p class="text-sm" id="userEmail"><span>Email:</span> Will@email.com</p>
+          <p class="text-sm" id="userAge"><span>Age:</span> 16</p>
+          <p class="text-sm" id="userGender"><span>Gender:</span> Male</p>
+          <p class="text-sm" id="userAbout"><span>About:</span><br>Hey everyone, it’s Will. Let’s get real for a second. My journey started with The Fresh Prince of Bel-Air, and while it was fun, it was also a grind that demanded a lot from me. I pushed hard to break into films like Men in Black and The Pursuit of Happyness. It wasn’t just about the glitz; it was about proving myself time and time again. Music? That’s another layer—something I’m passionate about but not just a side gig. I pour my heart into everything I do, and I expect the same from the people around me. So, thanks for sticking with me through all the ups and downs!</p>
+        </div>
+
+        <section class="mt-4">
+          <div class="row">
+            <article class="col-md-4 mb-4">
+              <a href="post1.html" class="text-decoration-none">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Post Title 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                   </div>
-                </a>
-              </article>
-              <article class="col-md-4">
-                <a href="post2.html" class="text-decoration-none">
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <h5 class="card-title">Post Title 2</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis necessitatibus voluptates. Enim, deleniti? Nostrum, sed ipsum rem, accusamus at iste reiciendis eligendi, pariatur quisquam numquam fugiat? Veniam, voluptatem saepe...</p>
-                    </div>
+                </div>
+              </a>
+            </article>
+            <article class="col-md-4 mb-4">
+              <a href="post2.html" class="text-decoration-none">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Post Title 2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                   </div>
-                </a>
-              </article>
-              <article class="col-md-4">
-                <a href="post3.html" class="text-decoration-none">
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <h5 class="card-title">Post Title 3</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis necessitatibus voluptates. Enim, deleniti? Nostrum, sed ipsum rem, accusamus at iste reiciendis eligendi, pariatur quisquam numquam fugiat? Veniam, voluptatem saepe...</p>
-                    </div>
+                </div>
+              </a>
+            </article>
+            <article class="col-md-4 mb-4">
+              <a href="post3.html" class="text-decoration-none">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Post Title 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                   </div>
-                </a>
-              </article>
-            </div>
-          </section>
-          <div>
-            <button id="followButton" class="btn btn-primary mb-4">Follow</button>
-            <button id="messageButton" class="btn btn-primary mb-4">Message</button>
+                </div>
+              </a>
+            </article>
           </div>
+        </section>
+
+        <div class="text-center">
+          <button id="followButton" class="btn btn-primary mb-4">Follow</button>
+          <button id="messageButton" class="btn btn-primary mb-4">Message</button>
         </div>
       </article>
     </section>
   </main>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/00a541403c.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../scss/fonts.scss";
+
+$primary-h1-colour: #6d1710;
+$primary-btn-colour: black;
+
+#cardHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+        #followerCount {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        #followerNumber {
+            font-weight: 800;
+            font-size: 16px;
+        }
+}
+
+#userName {
+    font-family: syncopate;
+    font-size: 30px;
+    font-weight: 600;
+    color: $primary-h1-colour;
+}
+
+#profileInfo {
+        font-family: "Turret Road", sans-serif;
+        font-weight: 400;
+
+        p {
+            span {
+                font-weight: 900;
+            }
+        }
+}

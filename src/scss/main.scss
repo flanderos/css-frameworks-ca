@@ -1,27 +1,35 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../scss/fonts.scss";
+@import "../scss/profile.scss";
 
 $primary-h1-colour: #6d1710;
 $primary-btn-colour: black;
-$profile-card-margin: 5px;
-
 
 h1 {
   color: $primary-h1-colour;
 }
 
+nav {
+  font-family: Michroma;
+  width: 100%;
+}
+
 body {
-  font-family: 'Roboto', sans-serif; // 
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.container {
-  margin-top: 50px;
+header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: lightgrey;
+  width: 100%;
+  font-family: Syncopate;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
 .card {
@@ -37,55 +45,77 @@ body {
   }
 }
 
-form {
-  max-width: 90%;
-  margin: 0 auto; // Horisontalt sentrert
-  border-radius: 10px;
-  min-width: 300px; 
+#loginSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 30px 5px 0px 5px;
+  
 
+  #loginform {
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 20px; 
+    font-family: Michroma;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .form-control {
+      margin-bottom: 15px; 
+    }
+
+    button {
+      margin-top: 20px; 
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      gap: 5px;
+      position: relative;
+    
+      i {
+        opacity: 0;
+        transition: 0.5s;
+        right: 10px;
+      }
+
+      &:hover i {
+        opacity: 1;
+      }
+
+     
+    }
+  }
 }
 
-.form-control {
-  width: 90%;
+#aboutSection {
+  font-family: michroma;
+  margin: 30px 5px;
+
+    h2 {
+      font-size: 40px;
+    }
+    
+    #techlist {
+      display: flex;
+      flex-direction: column;
+      font-size: larger;
+      font-family: michroma;
+    }
 }
 
 .btn-primary {
-  background-color: #010102;
-  border-color: #010203;
+  background-color: $primary-btn-colour;
+  border-color: $primary-btn-colour;
+  font-family: michroma;
   width: 90%;
+  margin-top: 10px;
+  transition: 0.3s;
 
   &:hover {
     background-color: #6d1710;
     border-color: #6d1710;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
-}
-
-.profile-card {
-  max-width: 90%;
-  margin: 5px auto;
-}
-
-header {
-  width: 100%;
-}
-
-nav {
-  width: 100%;
-}
-
-#loginform {
-  max-width: 500px;
-
-  &-button {
-    margin-top: 5px;
-  }
-}
-
-article {
-  margin: 5px auto;
-}
-
-#userName {
-  font-size:x-large;
-  font-weight: 800;
 }
