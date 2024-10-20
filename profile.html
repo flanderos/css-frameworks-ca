@@ -39,24 +39,27 @@
         <div id="followerCount">
           <h5>Followers</h5>
           <span id="followerNumber">99k</span>
+          <div id="followerCount">
+            <h5>Following</h5>
+            <p id="followerNumber">1</p>
+          </div>
         </div>
       </div>
         <div>
           <img src="media/will.jpg" alt="picture of will smith">
         </div>
         <div class="text-center">
-          <button id="editAvatarButton" class="btn btn-primary mb-4">Edit Profile Picture <i class="fa-regular fa-pen-to-square"></i></button>
+          <button id="editProfilePictureButton" class="btn btn-primary mb-4">Edit Profile Picture <i class="fa-regular fa-pen-to-square"></i></button>
         </div>
         <div id="followersFollowing" class="text-center mt-4">
-          <div class="d-inline-block mr-4">
-            <h5>Following</h5>
-            <p id="followersCount">1</p>
-          </div>
         </div>
         <div id="profile-picture" class="mb-4">
           <img class="img-fluid rounded-circle border border-dark shadow-lg" src="media/avatar.jpg" alt="User Avatar">
         </div>
-        
+        <div class="text-center" id="editAvatarDiv">
+          <button id="editAvatarButton" class="btn btn-primary mb-4">Edit Avatar 
+            <i class="fa-regular fa-pen-to-square"></i></button>
+        </div>
         <div id="profileInfo" class="text-start">
           <p class="text-lg" id="realName"><span>Name:</span> Will Smith</p>
           <p class="text-sm" id="userEmail"><span>Email:</span> Will@email.com</p>
@@ -65,14 +68,14 @@
           <p class="text-sm" id="userAbout"><span>About:</span><br>Hey everyone, it’s Will. Let’s get real for a second. My journey started with The Fresh Prince of Bel-Air, and while it was fun, it was also a grind that demanded a lot from me. I pushed hard to break into films like Men in Black and The Pursuit of Happyness. It wasn’t just about the glitz; it was about proving myself time and time again. Music? That’s another layer—something I’m passionate about but not just a side gig. I pour my heart into everything I do, and I expect the same from the people around me. So, thanks for sticking with me through all the ups and downs!</p>
         </div>
 
-        <section class="mt-4">
+        <section class="mt-4" id="mostRecent">
           <div class="row">
             <article class="col-md-4 mb-4">
               <a href="post1.html" class="text-decoration-none">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Post Title 1</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <h5 class="card-title">Had fun at concert</h5>
+                    <p class="card-text">I watched Ted Sheeran the other day, was fun until...</p>
                   </div>
                 </div>
               </a>
@@ -81,8 +84,8 @@
               <a href="post2.html" class="text-decoration-none">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Post Title 2</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <h5 class="card-title">Weird socks</h5>
+                    <p class="card-text">You now what they say about the socks that contains...</p>
                   </div>
                 </div>
               </a>
@@ -91,8 +94,8 @@
               <a href="post3.html" class="text-decoration-none">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Post Title 3</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <h5 class="card-title">Oscar goes to</h5>
+                    <p class="card-text">Had fun at the Oscars the other day until...</p>
                   </div>
                 </div>
               </a>
@@ -101,8 +104,8 @@
         </section>
 
         <div class="text-center">
-          <button id="followButton" class="btn btn-primary mb-4">Follow</button>
-          <button id="messageButton" class="btn btn-primary mb-4">Message</button>
+          <button id="followButton" class="btn btn-primary mb-4">Follow <i class="fa-solid fa-user-plus"></i></button>
+          <button id="messageButton" class="btn btn-primary mb-4">Message <i class="fa-regular fa-message"></i></button>
         </div>
       </article>
     </section>
