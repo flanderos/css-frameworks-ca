@@ -4,6 +4,7 @@
 $primary-h1-colour: #6d1710;
 $primary-btn-colour: black;
 
+
 #cardHeader {
     display: flex;
     flex-direction: row;
@@ -22,6 +23,18 @@ $primary-btn-colour: black;
         }
 }
 
+#followingCount {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    #followingNumber {
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+}
+
 #userName {
     font-family: syncopate;
     font-size: 30px;
@@ -34,8 +47,44 @@ $primary-btn-colour: black;
         font-weight: 400;
 
         p {
+
             span {
                 font-weight: 900;
             }
         }
+}
+
+#mostRecent {
+    font-family: Michroma;
+    height: 300px;
+}
+
+.card {
+
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    }
+
+    .card-body {
+
+        height: 200px;
+        border-radius: 5px;
+        transition: 0.5s;
+
+            .card-title {
+                font-weight: 900;
+            }
+
+        }
+}
+
+#editAvatarDiv {
+    display: flex;
+
+}
+
+#editAvatarButton {
+    width: 160px;
 }
