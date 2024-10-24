@@ -4,7 +4,7 @@
 
 ## Installation
 
-#### git clone https://github.com/flanderos/css-frameworks-ca/tree/redelivery
+#### git clone https://github.com/flanderos/css-frameworks-ca
 #### npm install
 #### npm run build
 #### npm start 
