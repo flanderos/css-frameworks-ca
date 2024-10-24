@@ -1,7 +1,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../scss/fonts.scss";
 
-$primary-blue-colour: #25486b;
+/* $primary-blue-colour: #25486b;
 $gutter: 16px; 
 
 .article-grid {
@@ -115,3 +115,38 @@ label {
     color: #fff;
 }
 
+#postcomment-button {
+    background-color: #1ec06f;
+    border: none;
+    color: #25486b;
+}
+
+#search-container {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin-top: 20px;
+
+        input {
+            border: none;
+            border-radius: 5px;
+            font-family: michroma;
+            height: 30px;
+
+        }
+        button {
+            background-color: #fff;
+            font-family: michroma;
+            height: 30px;
+            margin: 0 auto;
+            border: none;
+            border-radius: 5px;
+            padding: 0px 50px 0px 50px;
+
+        }
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+        }
+}
+ */

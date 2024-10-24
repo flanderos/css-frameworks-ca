@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="/dist/css/main.css">
   <title>Feed Page</title>
 </head>
-<body>
-  <header>
-    <h1 class="display-4 text-center mt-5">CSS Framework CA, Social Media Page</h1>
-  </header>
+<body class="bg-secondary">
+  <header class="bg-primary text-secondary">
+    <h1 class="display-5 text-center">CSS Framework CA, Social Media Page</h1>
+</header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="profile.html">My Profile</a>
@@ -34,49 +34,49 @@
 </nav>
 
 
-  <main class="container mt-5 mb-5">
+  <main class="mt-5 mb-5">
     <section class="row justify-content-center">
-      <article class="col-md-8 border border-dark rounded p-4 bg-white shadow-lg profile-card">
-        <div id="cardHeader">
-          <div id="userName">
-            <p id="userName">Will Smith</p>
+      <article class="col-md-8 rounded p-4 bg-white shadow-lg profile-card">
+        <div>
+          <div>
+            <p class="fs-1 fw-bold">Will Smith</p>
           </div>
-          <div id="followerCount" class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between">
             <div>
               <h5>Followers</h5>
-              <span id="followerNumber">99k</span>
+              <p>99k</p>
             </div>
             <div>
               <h5>Following</h5>
-              <p id="followerNumber">1</p>
+              <p>1</p>
             </div>
           </div>
         </div>
         <div>
           <img src="media/will.jpg" alt="picture of Will Smith" class="img-fluid rounded">
         </div>
-        <div class="text-center">
-          <button id="editProfilePictureButton" class="btn btn-primary mb-4">Edit Profile Picture <i class="fa-regular fa-pen-to-square"></i></button>
+        <div class="mt-5 mb-5">
+          <button class="btn btn-primary">Edit Profile Picture <i class="fa-regular fa-pen-to-square"></i></button>
         </div>
-        <div id="profile-picture" class="mb-4">
+        <div class="mb-4">
           <img class="img-fluid rounded-circle border border-dark shadow-lg" src="media/avatar.jpg" alt="User Avatar">
         </div>
-        <div class="text-center" id="editAvatarDiv">
-          <button id="editAvatarButton" class="btn btn-primary mb-4">Edit Avatar 
+        <div class="mb-4">
+          <button class="btn btn-primary">Edit Avatar 
             <i class="fa-regular fa-pen-to-square"></i></button>
         </div>
-        <div id="profileInfo" class="text-start">
-          <p class="text-lg" id="realName"><span>Name:</span> Will Smith</p>
-          <p class="text-sm" id="userEmail"><span>Email:</span> Will@email.com</p>
-          <p class="text-sm" id="userAge"><span>Age:</span> 16</p>
-          <p class="text-sm" id="userGender"><span>Gender:</span> Male</p>
-          <p class="text-sm" id="userAbout"><span>About:</span><br>Hey everyone, it’s Will. Let’s get real for a second...</p>
+        <div class="text-start">
+          <p class="text-lg" > <span class="fw-bold">Name:</span> Will Smith</p>
+          <p class="text-sm-x" id="userEmail"><span class="fw-bold">Email:</span> Will@email.com</p>
+          <p class="text-sm-x" id="userAge"><span class="fw-bold">Age:</span> 16</p>
+          <p class="text-sm-x" id="userGender"><span class="fw-bold">Gender:</span> Male</p>
+          <p class="text-sm-x" id="userAbout"><span class="fw-bold">About:</span><br>Hey everyone, it’s Will. Let’s get real for a second...</p>
         </div>
 
         <section class="mt-4" id="mostRecent">
           <h2 class="text-center">Most Recent Posts</h2>
           <div class="row">
-            <!-- Post 1 -->
+            
             <article class="col-md-4 mb-4">
               <a href="post1.html" class="text-decoration-none">
                 <div class="card">
@@ -87,7 +87,7 @@
                 </div>
               </a>
             </article>
-            <!-- Post 2 -->
+            
             <article class="col-md-4 mb-4">
               <a href="post2.html" class="text-decoration-none">
                 <div class="card">
@@ -98,7 +98,7 @@
                 </div>
               </a>
             </article>
-            <!-- Post 3 -->
+            
             <article class="col-md-4 mb-4">
               <a href="post3.html" class="text-decoration-none">
                 <div class="card">

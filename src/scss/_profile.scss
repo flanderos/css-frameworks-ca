@@ -1,11 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../scss/fonts.scss";
 
-$primary-h1-colour: #6d1710;
-$primary-btn-colour: black;
 
 
-#cardHeader {
+/* #cardHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,6 +13,16 @@ $primary-btn-colour: black;
             display: flex;
             flex-direction: row;
             gap: 20px;
+            color: #6d1710;
+
+                div {
+                    
+                h5 {
+                    color: #6d1710;
+                }
+
+                }
+
         }
 
         #followerNumber {
@@ -87,4 +95,4 @@ $primary-btn-colour: black;
 
 #editAvatarButton {
     width: 160px;
-}
+} */

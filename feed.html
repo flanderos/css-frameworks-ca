@@ -8,8 +8,8 @@
     <title>CSS Course Assignment</title>
 </head>
 <body>
-    <header>
-        <h1 class="display-4 text-center mt-5">CSS Framework CA, Social Media Page</h1>
+    <header class="bg-primary text-secondary">
+        <h1 class="display-5 text-center">CSS Framework CA, Social Media Page</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -32,29 +32,29 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-4">
+    <div class="p-4 bg-secondary">
         <h5>Sort by:</h5>
         <div class="form-group">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="newest" value="newest">
+                <input class="form-check-input" type="radio" id="newest" value="newest">
                 <label class="form-check-label" for="newest">
                     Newest
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="oldest" value="oldest">
+                <input class="form-check-input" type="radio" id="oldest" value="oldest">
                 <label class="form-check-label" for="oldest">
                     Oldest
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="mostLiked" value="mostLiked">
+                <input class="form-check-input" type="radio" id="mostLiked" value="mostLiked">
                 <label class="form-check-label" for="mostLiked">
                     Most Liked
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="leastLiked" value="leastLiked">
+                <input class="form-check-input" type="radio" id="leastLiked" value="leastLiked">
                 <label class="form-check-label" for="leastLiked">
                     Least Liked
                 </label>
@@ -62,299 +62,297 @@
         </div>
         <button id="sort-button">Sort</button>
     </div>
-    <main class="container mt-4">
-        <div class="article-grid">
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">The Power of Positivity</h2>
-                <p class="card-text postpreviewtext">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Family First</h2>
-                <p class="card-text postpreviewtext">No matter how busy life gets, family will always come first. Cherish those moments with loved ones; they are what truly matter in life</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Chasing Dreams</h2>
-                <p class="card-text postpreviewtext">Never stop chasing your dreams. The journey is just as important as the destination, and every step brings new lessons and opportunities.</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">The Joy of Acting</h2>
-                <p class="card-text postpreviewtext">Acting is a way to tell stories and connect with people on a deeper level. It’s not just about the glitz; it's about bringing characters to life</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Music is Life</h2>
-                <p class="card-text postpreviewtext">Music has a unique way of touching our hearts. It's a universal language that brings people together, no matter their background</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Lessons from Life</h2>
-                <p class="card-text postpreviewtext">Every experience teaches us something valuable. Embrace the lessons, whether they come from success or failure, and use them to grow</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Stay Fit</h2>
-                <p class="card-text postpreviewtext">Fitness is not just about the body; it's about the mind as well. Staying fit keeps me energized and ready to tackle life's challenges.</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Balancing Fame and Privacy</h2>
-                <p class="card-text postpreviewtext">Fame has its perks, but it also comes with challenges. Finding a balance between public life and personal privacy is essential for my well-being.</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="card postbox shadow">
-            <div class="card-body">
-                <header class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="posttags">
-                        <span class="badge badge-primary">Tags: Cool story, Nice</span>
-                    </div>
-                    <button class="btn btn-sm btn-outline-secondary editbutton">Edit post</button>
-                </header>
-                <h2 class="card-title postpreviewheading">Travel Adventures</h2>
-                <p class="card-text postpreviewtext">Traveling opens your mind and heart. Discovering new cultures and experiences enriches your life and expands your perspective</p>
-                <footer class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="postdatetime">Posted: 16.08.1987</div>
-                    <div class="likecounter">Reactions: 2 likes</div>
-                </footer>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button class="btn btn-sm btn-outline-primary thumbsup" data-post-id="postId">Like <i class="far fa-thumbs-up"></i></button>
-                    <button class="btn btn-sm btn-outline-danger deletebutton">Delete <i class="fa-solid fa-trash"></i></button>
-                </div>
-                <section class="commentsection mt-3">
-                    <textarea class="form-control mb-2 commentbox" placeholder="Write a comment..."></textarea>
-                    <button class="btn btn-primary btn-sm commentpostbutton">Post Comment</button>
-                    <div class="previouscomments mt-2">
-                        <div class="comment">
-                            <strong>Geir Arne:</strong> Nice post!
-                        </div>
-                        <div class="comment">
-                            <strong>Durek:</strong> Great content!
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
+    <div class="p-4 bg-secondary">
+        <input class="search-input rounded">
+        <button class="btn-secondary">Search <i class="fa-solid fa-magnifying-glass"></i> </button>
     </div>
-    </main>
+    <div class="grid-container p-4 bg-secondary">
+        <div class="row">
+            <!-- Blog post 1 -->
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card mb-4">
+                    <div class="card-body">
+                        <header class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="badge bg-primary">Tags: Cool story, Nice</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary">Edit post <i class="fa-solid fa-wrench"></i></button>
+                        </header>
+                        <h2 class="card-title">The Power of Positivity</h2>
+                        <p class="card-text">Life is too short to be negative. Embrace every moment and focus on the good things! It's amazing how a positive mindset can change your outlook.</p>
+                        <footer class="d-flex justify-content-between align-items-center">
+                            <div>Posted: 16.08.1987</div>
+                            <div>Reactions: 2 likes</div>
+                        </footer>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="btn btn-sm btn-outline-primary">Like <i class="far fa-thumbs-up"></i></button>
+                            <button class="btn btn-sm btn-outline-danger">Delete <i class="fa-solid fa-trash"></i></button>
+                        </div>
+                        <section class="mt-3">
+                            <input class="form-control mb-2" placeholder="Write a comment..."></input>
+                            <button class="btn btn-primary btn-sm">Post Comment <i class="fa-solid fa-comment"></i></button>
+                            <div class="mt-2">
+                                <div><strong>Geir Arne:</strong> Nice post!</div>
+                                <div><strong>Durek:</strong> Great content!</div>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+            </div>
+           
+    
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/00a541403c.js" crossorigin="anonymous"></script>
 </body>
